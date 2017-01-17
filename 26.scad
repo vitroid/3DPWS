@@ -1,0 +1,11 @@
+$fn=30;
+head_radius=5;
+head_thick=1;
+pin_length=9;
+pin_radius=0.8;
+pin_base=2;
+cylinder(r=head_radius,h=head_thick);
+intersection(){
+  cylinder(r=pin_radius,h=pin_length);
+  cylinder(r1=pin_base,r2=0,h=pin_length);
+}

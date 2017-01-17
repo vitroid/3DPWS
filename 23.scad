@@ -1,0 +1,11 @@
+//3つの円柱の交差=ルーローの三角柱
+$fn=100;
+intersection(){
+    cylinder(r=10,h=5);
+    translate([10,0,0]){
+        cylinder(r=10,h=5);
+    }
+    translate([5,5*sqrt(3),0]){
+        cylinder(r=10,h=5);
+    }
+}
